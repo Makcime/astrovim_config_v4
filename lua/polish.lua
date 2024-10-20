@@ -16,3 +16,10 @@ vim.filetype.add {
     ["~/%.config/foo/.*"] = "fooscript",
   },
 }
+
+-- ~/.config/nvim/lua/user/polish.lua
+
+-- Monkey-patch for deprecated function
+if vim.lsp.get_active_clients == nil then vim.lsp.get_active_clients = vim.lsp.get_clients end
+
+-- Additional configurations can go here
