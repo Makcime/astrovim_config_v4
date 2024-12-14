@@ -68,7 +68,7 @@ return {
         -- ["<C-S>"] = false,
 
         -- Custom mapping to run :make
-        ["<leader>m"] = { ":make<cr>", desc = "Run make" },
+        ["<leader>m"] = { ":make -B<cr>", desc = "Run make" },
       },
     },
   },
